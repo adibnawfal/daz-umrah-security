@@ -135,7 +135,7 @@
 
       @if (Auth::user()->role === 'admin' || Auth::user()->role === 'staff')
         <!-- Profile -->
-        <li class="hs-accordion" id="profile-accordion">
+        {{-- <li class="hs-accordion" id="profile-accordion">
           <button type="button"
             class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-slate-700 rounded-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:hs-accordion-active:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
             <svg class="flex-shrink-0 mt-0.5 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -173,11 +173,11 @@
               </li>
             </ul>
           </div>
-        </li>
+        </li> --}}
         <!-- End Profile -->
       @elseif (Auth::user()->role === 'customer')
-        <!-- Umrah -->
-        <li>
+        <!-- Profile -->
+        {{-- <li>
           <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             href="{{ route('profile') }}">
             <svg class="flex-shrink-0 mt-0.5 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -188,8 +188,8 @@
             </svg>
             Account
           </a>
-        </li>
-        <!-- End Umrah -->
+        </li> --}}
+        <!-- End Profile -->
       @endif
 
       @if (Auth::user()->role === 'admin' || Auth::user()->role === 'staff')
